@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- daisy Ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  >
+<!-- Navbar + Hero -->
+<header class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow z-50">
+    <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <div class="text-3xl font-black text-gray-800 dark:text-white">ProKick Sports</div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-8 text-lg font-semibold text-gray-800 dark:text-white">
+            <a href="#" class="hover:text-pink-500">Home</a>
+            <a href="#About" class="hover:text-pink-500">About</a>
+            <a href="#product" class="hover:text-pink-500">Product</a>
+            <a href="#" class="hover:text-pink-500">Contact</a>
+        
+
+            <!-- Login Button -->
+            <a href="https://mahedihasanshanto.github.io/LoginFrom/"
+               class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-lg hover:bg-pink-500 hover:text-white">
+                Login
+            </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="lg:hidden flex flex-col space-y-1">
+            <span class="w-7 h-1 bg-gray-800 dark:bg-white"></span>
+            <span class="w-7 h-1 bg-gray-800 dark:bg-white"></span>
+            <span class="w-7 h-1 bg-gray-800 dark:bg-white"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu"
+         class=" lg:hidden flex flex-col bg-white dark:bg-gray-900 py-4 space-y-3 text-lg text-gray-800 dark:text-white px-6">
+        <a href="#" class="hover:text-pink-500">Home</a>
+        <a href="#" class="hover:text-pink-500">About</a>
+        <a href="#" class="hover:text-pink-500">Product</a>
+        <a href="#" class="hover:text-pink-500">Contact</a>
+        
+
+        <!-- Mobile Login Button -->
+        <a href="https://mahedihasanshanto.github.io/LoginFrom/"
+           class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-lg hover:bg-pink-500 hover:text-white">
+            Login
+        </a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="pt-28 bg-white dark:bg-gray-800 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- Wrapper -->
+    <div class="flex flex-col-reverse md:flex-row items-center gap-10">
+
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        
+        <span class="w-20 h-2 bg-gray-800 dark:bg-white mb-6 block mx-auto md:mx-0"></span>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-6xl font-black text-gray-800 dark:text-white leading-tight">
+          ⭐ Welcome to <span class="text-pink-500">ProKick Sports</span>
+        </h1>
+
+        <p class="text-gray-700 dark:text-gray-300 mt-4 text-base sm:text-lg">
+          From world-class sports shoes to pro jerseys & training gear—built to boost your performance
+          and take your game to the next level.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start mt-8 gap-4">
+          <a href="#"
+             class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-lg hover:bg-pink-500 hover:text-white">
+            Shop Now
+          </a>
+
+          <a href="#"
+             class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-lg hover:bg-pink-500 hover:text-white">
+            View Collection
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img src="man img/football-3245968_1280.png"
+             class="w-64 sm:w-72 md:w-96 drop-shadow-xl">
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+<!-- header section  -->
+ 
+<div id="About" class="bg-white">
+      <header class="bg-pink-500 text-white text-center py-12">
+        <h1 class="text-4xl font-bold mt-16">About Us</h1>
+      </header>
+
+      <section class="text-center py-12 px-4">
+        <h2 class="text-2xl font-bold">ProKick Sports</h2>
+        <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
+          Our mission is to provide exceptional healthcare services with a focus on availability, reliability, and support.
+        </p>
+        <div class="flex justify-center space-x-8 mt-8 animate-fadeIn">
+          <div class="transition transform hover:scale-110">
+            <h3 class="text-xl font-bold" >25%</h3>
+            <p class="text-gray-700">Discount</p>
+          </div>
+          <div class="transition transform hover:scale-110">
+            <h3 class="text-xl font-bold">2+</h3>
+            <p class="text-gray-700">Years of Experience</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-pink-500 text-white py-12 px-4">
+        <h2 class="text-2xl font-bold text-center">Our Vision</h2>
+        <p class="mt-4 text-center max-w-2xl mx-auto">
+          “To be one of the leading e-commerce brands in the country by offering innovation, value, and an unmatched customer experience.”
+        </p>
+      </section>
+
+      <section class="text-center py-12 px-4">
+        <h2 class="text-2xl font-bold">My Prokick Sports</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class ="text-xl font-bold" >Soccer Jerseys</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Sports Shoes</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Goalkeeper Gloves</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Training Accessories</h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Sports Apparel</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Champion Hooded Jacket</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">RapidFit Water Bottle</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Dress</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-12 px-4">
+        <h2 class="text-2xl font-bold text-center text-pink-500 py-7">Country Reviews (Short & Professional)</h2>
+         <div class="gap-8 space-y-8 md:columns-2 lg:columns-3">
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/12.jpg" alt="user avatar" width="400" height="400" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Ravi Kumar</h6>
+                        <p class="text-sm text-gray-500">Car Enthusiast</p>
+                    </div>
+                    <a href="https://twitter.com/ravikumar/status/1234567890"
+                        class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">The quality of these seat covers is outstanding. They fit perfectly and add a touch of
+                luxury to
+                my car's interior. Highly recommend!</p>
+        </div>
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/14.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Anjali Sharma</h6>
+                        <p class="text-sm text-gray-500">Marketing Professional</p>
+                    </div>
+                    <a href="https://www.instagram.com/p/1234567890" class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">I love the customizable designs! I was able to choose the perfect color to match my car's
+                interior. The material feels very durable.</p>
+        </div>
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/18.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Vijay Singh</h6>
+                        <p class="text-sm text-gray-500">Software Developer</p>
+                    </div>
+                    <a href="https://www.facebook.com/vijaysingh/posts/1234567890"
+                        class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">These seat covers are a game-changer for long drives. The added padding and ergonomic design
+                make
+                a huge difference in comfort.</p>
+        </div>
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/2.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Priya Patel</h6>
+                        <p class="text-sm text-gray-500">Mobile Developer</p>
+                    </div>
+                    <a href="https://twitter.com/priyapatel/status/1234567890"
+                        class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">The installation was super easy, and the instructions were clear. My car looks and feels
+                much more
+                upscale now.</p>
+        </div>
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/62.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Arjun Mehta</h6>
+                        <p class="text-sm text-gray-500">Manager</p>
+                    </div>
+                    <a href="https://www.instagram.com/p/1234567890" class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">Great value for money. The seat covers have a premium feel and have significantly improved
+                the
+                look of my car's interior.</p>
+        </div>
+
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-pink-600/10">
+            <div class="flex gap-4 items-start">
+                <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/19.jpg" alt="user avatar" width="400" height="400" loading="lazy">
+                <div class="flex-1 flex justify-between items-start">
+                    <div>
+                        <h6 class="text-lg font-medium text-gray-700">Sneha Rao</h6>
+                        <p class="text-sm text-gray-500">Product Designer</p>
+                    </div>
+                    <a href="https://www.facebook.com/sneharao/posts/1234567890"
+                        class="text-blue-500 hover:text-blue-600 ml-4">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-8">Absolutely love these seat covers. They're stylish, comfortable, and were really easy to
+                install.
+                My car interior looks brand new!</p>
+        </div>
+
+    </div>
+</section>
+        
+      
+      </section>
+
+      <section class="text-center py-12 px-4">
+        <h2 class="text-2xl font-bold">What Makes Us Different</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Official Team Jerseys</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">100% Quality Checked</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Fast Delivery Nationwide</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors">
+            <h3 class="text-xl font-bold">Easy Return & Exchange ai titell ki dite pari</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-pink-500 text-white text-center py-12 px-4">
+        <h2 class="text-2xl font-bold">Patient Testimonials</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
+          <div class="p-4 shadow-lg rounded-lg bg-pink-600 hover:bg-pink-500 transition-colors">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tristique mi."</p>
+            <h3 class="mt-4 font-bold">- Patient A</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-600 hover:bg-pink-500 transition-colors">
+            <p>"Nullam ac augue eget diam posuere vehicula. Vivamus quis nulla ac justo euismod posuere."</p>
+            <h3 class="mt-4 font-bold">- Patient B</h3>
+          </div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-600 hover:bg-pink-500 transition-colors">
+            <p>"Fusce tincidunt, arcu nec vestibulum tincidunt, eros massa ullamcorper urna."</p>
+            <h3 class="mt-4 font-bold">- Patient C</h3>
+          </div>
+        </div>
+      </section>
+
+     
+    </div>
+<!-- mian section  -->
+ <!-- product -->
+<section id="product" class=" bg-gray-100 p-10">
+  <div class=" bg-gray-100 text-pink-500 text-center text-4xl font-bold py-4">
+    Product
+  </div>
+
+    <div id="SoccerJerseys" class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-black mb-8">Soccer Jerseys</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-pink-400 p-8">
+                <div class="relative overflow-hidden">
+                  <!-- one  -->
+                    <img class="object-cover w-full h-full" src="img football/286.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">Product Name</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$29.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  <!-- two  -->
+                    <img class="object-cover w-full h-full" src="img football/297.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">Product Name</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$29.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- three  -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                    <img class="object-cover w-full h-full" src="img football/286.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">ManCity</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$10.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  <!--  four -->
+                    <img class="object-cover w-full h-full" src="img football/456.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$20.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- five  -->
+             
+             <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  
+                    <img class="object-cover w-full h-full" src="img football/581.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$20.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- six  -->
+
+             <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+               
+                    <img class="object-cover w-full h-full" src="img football/333.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$10.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- End  -->
+    </div>
+</div>
+  <!-- section one  -->
+   <section id="product" class=" bg-gray-100 p-10">
+ <div id="SoccerJerseys" class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-black mb-8">Sports Shoes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-pink-400 p-8">
+                <div class="relative overflow-hidden">
+                  <!-- one  -->
+                    <img class="object-cover w-full h-full" src="sports Showe/29shoes_4.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">Product Name</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$29.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  <!-- two  -->
+                    <img class="object-cover w-full h-full" src="sports Showe/8_april_4.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">Product Name</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$29.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- three  -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                    <img class="object-cover w-full h-full" src="sports Showe/close-up-runner-shoes-with-red-laces.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">ManCity</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$10.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  <!--  four -->
+                    <img class="object-cover w-full h-full" src="sports Showe/good-shoes-is-basis-running.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$20.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- five  -->
+             
+             <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+                  
+                    <img class="object-cover w-full h-full" src="sports Showe/gym-composition-with-sport-elements.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$20.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- six  -->
+
+             <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="relative overflow-hidden">
+               
+                    <img class="object-cover w-full h-full" src="sports Showe/29shoes_4.jpg" alt="Product">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-pink-500 mt-4">lister city</h3>
+                <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                    ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-gray-900 font-bold text-lg">$10.99</span>
+                    <button class="py-3 px-6 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-500 hover:text-white">Add to Cart</button>
+                </div>
+            </div>
+            <!-- End  -->
+    </div>
+</div>
+       
+ 
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+       <!-- footer section -->
+
+</body>
+
+</html>
